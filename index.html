@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +8,91 @@
     
     <!-- CSS External -->
     <link rel="stylesheet" href="css\style.css">
+
+    <!-- Tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
 
     <!-- header content -->
-    <header></header>
+    <header class="main-header py-[8px] px-[4px]">
+        <!-- icon -->
+         <div class="logo"></div>
+
+        <!-- navbar -->
+         <nav class="flex">
+            <a href="#Home Page" class="border p-[4px]">Home</a>
+            <a href="#Our Profile" class="border p-[4px]">Our Profile</a>
+            <a href="#Portofolio" class="border p-[4px]">Portofolio</a>
+            <a href="#Message Us" class="border p-[4px]">Message Us</a>
+         </nav>
+    </header>
+<hr />
 
     <!-- main content -->
-    <main></main>
+    <main>
+        
+        <!-- Home -->
+        <section id="Home Page" class="min-h-[500px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold my-[16px]">
+                    Welcome <span id="username"></span> to Our Website
+                </h2>
+            </header>
+            <p class="text-center">
+                We are a team of professionals dedicated to providing the best services to our clients.
+            </p>
+        </section>
+
+        <hr />
+
+        <!-- Our Profile -->
+         <section id="Our Profile" class="min-h-[500px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold my-[16px]">
+                    Our Profile
+                </h2>
+            </header>
+         </section>
+
+         <hr />
+
+        <!-- Portofolio -->
+         <section id="Portofolio" class="min-h-[500px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold my-[16px]">
+                    Portofolio
+                </h2>
+            </header>
+         </section>
+
+         <hr />
+        
+        <!-- Message Us  -->
+         <section id="Message Us" class="min-h-[500px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold my-[16px]">
+                    Message Us
+                </h2>
+            </header>
+            <form class="px-[16px]">
+                <label for="name-input" class="block my-[8px]">
+                    Name:
+                    <input type="text" id="name-input" class="border p-[4px] w-full" />
+                </label>
+                
+                <button type="button" onclick="validateform();" class="border p-[4px] mt-[8px]">Send Message</button>
+            </form>
+         </section>
+    </main>
+
+    <hr />
 
     <!-- footer content -->
-    <footer></footer>
+    <footer class="text-center">
+        <p>&copy; 2025 Dzaki Ahmad Farid, All Rights Reserved.</p>
+    </footer>
 
     <!-- JS External -->
     <script src="js\script.js"></script>
